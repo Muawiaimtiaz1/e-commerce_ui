@@ -1,11 +1,8 @@
 import { useState, useEffect } from "react";
 
-export function Carousel() {
-  const images = [
-    "/nb-1st-slide.jpg",
-    "/nb-2nd-slide.jpg",
-    "/nb-3rd-slide.jpg"
-  ];
+export function Carousel(props) {
+  
+  const images = props.carousel_images;
   
   const [active, setActive] = useState(0);
   const [prev, setPrev] = useState(0);

@@ -1,8 +1,8 @@
 import { FaFacebook, FaPinterest, FaTwitter, FaInstagram } from "react-icons/fa";
-export function PrimaryAlert({message}){
+export function PrimaryAlert(props){
     return <>
 
-    <div className="hidden linker lg:flex items-center justify-evenly w-[100%] bg-white   text-black h-10 text-small font-thin  ">
+    <div className='hidden linker lg:flex items-center justify-evenly w-[100%] bg-white   text-black h-10 text-small font-thin  '>
            <div className="flex gap-4 text-2xl">
 
       <FaFacebook className="text-gray-500  hover:text-[#C4B583] cursor-pointer w-[20px] h-[20px]  " />
@@ -12,7 +12,7 @@ export function PrimaryAlert({message}){
 
     </div>
         <div className="">
-Free shipping on all orders over $75
+{props.deal_text}
 
 </div>
         <div className="flex gap-4">
